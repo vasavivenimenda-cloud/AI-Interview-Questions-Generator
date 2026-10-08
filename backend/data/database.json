@@ -1,0 +1,217 @@
+{
+  "profile": {
+    "id": "user-default-1",
+    "name": "Alex Morgan",
+    "education": "B.Tech in Computer Science & Engineering",
+    "experience": "Fresher",
+    "targetRole": "Full Stack Developer",
+    "skills": "React, Node.js, Python, JavaScript, SQL, Git, REST APIs",
+    "programmingLanguage": "JavaScript",
+    "preferredInterviewType": "Technical Interview",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "updatedAt": "2026-10-08T13:26:10.724Z"
+  },
+  "settings": {
+    "provider": "mock",
+    "geminiApiKey": "",
+    "openaiApiKey": "",
+    "model": "gemini-1.5-flash",
+    "temperature": 0.7
+  },
+  "questions": [
+    {
+      "id": "q-sample-1",
+      "question": "Explain the event loop in JavaScript and how asynchronous callbacks are processed.",
+      "category": "Technical",
+      "difficulty": "Medium",
+      "jobRole": "Full Stack Developer",
+      "skills": "JavaScript, Node.js",
+      "programmingLanguage": "JavaScript",
+      "expectedAnswer": "The event loop monitors the Call Stack and the Task Queue (Callback Queue and Microtask Queue). When the call stack is empty, it pushes tasks from queues to the stack, prioritizing microtasks like Promises over macrotasks like setTimeout.",
+      "explanation": "JavaScript is single-threaded. Concurrency is achieved through the browser/Node event loop coordinating the V8 engine, Web APIs, and queue mechanisms.",
+      "keyPoints": [
+        "Single-threaded execution with non-blocking I/O",
+        "Call Stack handles synchronous execution",
+        "Microtasks (Promises, process.nextTick) have higher priority",
+        "Macrotasks (setTimeout, setInterval, I/O) execute after microtask drain"
+      ],
+      "isFavorite": true,
+      "createdAt": "2026-10-06T13:26:10.726Z"
+    },
+    {
+      "id": "q-sample-2",
+      "question": "Tell me about a challenging bug you encountered in a project and how you diagnosed and resolved it.",
+      "category": "Behavioral",
+      "difficulty": "Medium",
+      "jobRole": "Software Engineer",
+      "skills": "Problem Solving, Debugging, Communication",
+      "programmingLanguage": "General",
+      "expectedAnswer": "Use the STAR method: Situation (project context), Task (what failed or needed resolution), Action (systematic debugging steps, profiling, root cause analysis), Result (impact, resolution, tests added to prevent recurrence).",
+      "explanation": "Interviewers look for structured problem solving, resilience under pressure, and systematic debugging methodology rather than guesswork.",
+      "keyPoints": [
+        "Clear STAR structure (Situation, Task, Action, Result)",
+        "Root cause analysis over superficial fixes",
+        "Testing and post-mortem actions taken"
+      ],
+      "isFavorite": false,
+      "createdAt": "2026-10-05T13:26:10.726Z"
+    },
+    {
+      "id": "q-sample-3",
+      "question": "Two Sum Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+      "category": "Coding",
+      "difficulty": "Easy",
+      "jobRole": "Software Engineer",
+      "skills": "Data Structures, Hash Tables, Algorithms",
+      "programmingLanguage": "Python",
+      "expectedAnswer": "Use a hash map to store previously seen numbers and their indices. For each number x, check if (target - x) exists in the hash map. This achieves O(n) time and O(n) space complexity.",
+      "explanation": "Brute force checks all pairs in O(n^2). Storing complements in a dictionary reduces lookup time to O(1) on average.",
+      "keyPoints": [
+        "Single pass hash map technique",
+        "O(n) time complexity, O(n) auxiliary space",
+        "Edge case handling: duplicate numbers, no solution"
+      ],
+      "codingDetails": {
+        "problemStatement": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.",
+        "input": "nums = [2, 7, 11, 15], target = 9",
+        "output": "[0, 1]",
+        "constraints": "2 <= nums.length <= 10^4\n-10^9 <= nums[i] <= 10^9\n-10^9 <= target <= 10^9\nOnly one valid answer exists.",
+        "example": "Input: nums = [2, 7, 11, 15], target = 9\nOutput: [0, 1]\nExplanation: Because nums[0] + nums[1] == 9, we return [0, 1].",
+        "expectedApproach": "Iterate through the array while maintaining a hash table mapping each element value to its index. At index i, compute complement = target - nums[i]. If complement is in the map, return [map[complement], i]. Otherwise, record nums[i]: i.",
+        "solutionExplanation": "Time Complexity: O(n) where n is the number of elements. Space Complexity: O(n) for the hash map."
+      },
+      "isFavorite": true,
+      "createdAt": "2026-10-04T13:26:10.726Z"
+    },
+    {
+      "id": "q-sample-4",
+      "question": "What are the main principles of RESTful API design and how do HTTP status codes reflect operation results?",
+      "category": "Technical",
+      "difficulty": "Easy",
+      "jobRole": "Backend Developer",
+      "skills": "REST APIs, HTTP, Web Architecture",
+      "programmingLanguage": "JavaScript",
+      "expectedAnswer": "REST principles include client-server separation, statelessness, cacheability, uniform interface, and layered systems. HTTP verbs (GET, POST, PUT, DELETE, PATCH) represent actions, while status codes (2xx success, 3xx redirection, 4xx client errors, 5xx server errors) inform the client of outcomes.",
+      "explanation": "Adhering to standard HTTP semantics allows predictable client consumption and reliable distributed caching.",
+      "keyPoints": [
+        "Stateless communication where every request contains all necessary auth and data",
+        "Resource-oriented URI naming with proper HTTP methods",
+        "Accurate status codes (200, 201, 400, 401, 403, 404, 500)"
+      ],
+      "isFavorite": false,
+      "createdAt": "2026-10-03T13:26:10.726Z"
+    },
+    {
+      "id": "q-sample-5",
+      "question": "Why should we hire you for this role over other qualified candidates?",
+      "category": "HR",
+      "difficulty": "Medium",
+      "jobRole": "Full Stack Developer",
+      "skills": "Communication, Confidence, Value Proposition",
+      "programmingLanguage": "General",
+      "expectedAnswer": "Combine technical proficiency with passion, cultural fit, adaptability, and proactive problem solving. Highlight specific achievements that match the company goals.",
+      "explanation": "Focus on unique strengths, fast learning ability, alignment with company mission, and eagerness to contribute immediately.",
+      "keyPoints": [
+        "Highlight unique intersection of technical skills and team collaboration",
+        "Demonstrate understanding of the company domain",
+        "Show enthusiasm and long-term commitment"
+      ],
+      "isFavorite": false,
+      "createdAt": "2026-10-02T13:26:10.726Z"
+    }
+  ],
+  "interviews": [
+    {
+      "id": "int-hist-1",
+      "sessionName": "Full Stack Technical Screening",
+      "targetRole": "Full Stack Developer",
+      "experience": "Fresher",
+      "interviewType": "Technical Interview",
+      "difficulty": "Medium",
+      "totalQuestions": 5,
+      "completedAt": "2026-10-07T13:26:10.726Z",
+      "overallScore": 8.4,
+      "technicalScore": 8.8,
+      "communicationScore": 8.2,
+      "problemSolvingScore": 8.5,
+      "hrScore": 8,
+      "percentage": 84,
+      "strongAreas": [
+        "Solid grasp of JavaScript asynchronous runtime and Event Loop mechanics",
+        "Accurate understanding of RESTful API status codes and stateless design",
+        "Clear articulation of front-end state management concepts"
+      ],
+      "weakAreas": [
+        "Could deepen discussion on microtask vs macrotask execution order in V8",
+        "Need to explicitly cover error handling boundaries in distributed systems"
+      ],
+      "personalizedSuggestions": [
+        "Review the Node.js libuv event loop phases (timers, I/O callbacks, poll, check, close).",
+        "Practice framing answers with concrete real-world project examples."
+      ],
+      "questions": [
+        {
+          "id": "q-sample-1",
+          "question": "Explain the event loop in JavaScript and how asynchronous callbacks are processed.",
+          "category": "Technical",
+          "difficulty": "Medium",
+          "userAnswer": "The event loop in JavaScript allows non-blocking execution by managing call stack and queues. Synchronous code runs on the call stack. Asynchronous callbacks from timers or fetch go to queues. Microtasks like promises execute first when stack clears, followed by macrotasks.",
+          "evaluation": {
+            "score": 9,
+            "correctness": "High",
+            "relevance": "Directly addresses JavaScript runtime mechanics",
+            "strengths": "Clearly distinguished microtasks vs macrotasks and call stack processing.",
+            "missingPoints": "Could mention libuv in Node or Web APIs in browser.",
+            "suggestions": "Mentioning event loop starvation or long-running CPU blocking adds extra depth.",
+            "idealAnswer": "The event loop monitors Call Stack and queues. When Call Stack empties, it flushes microtask queue (Promises) before picking the next macrotask (setTimeout)."
+          }
+        },
+        {
+          "id": "q-sample-4",
+          "question": "What are the main principles of RESTful API design and how do HTTP status codes reflect operation results?",
+          "category": "Technical",
+          "difficulty": "Easy",
+          "userAnswer": "REST APIs use stateless client-server communication with HTTP methods like GET for reading, POST for creating, PUT for updating, and DELETE for removing. Status codes include 200 OK, 201 Created, 400 Bad Request, 404 Not Found, and 500 Server Error.",
+          "evaluation": {
+            "score": 8.5,
+            "correctness": "High",
+            "relevance": "Comprehensive overview of verbs and status codes",
+            "strengths": "Correctly listed core HTTP verbs and typical status codes.",
+            "missingPoints": "Mention of idempotency (PUT vs POST) and resource URI naming convention.",
+            "suggestions": "Discussing idempotence and caching headers demonstrates senior-level knowledge.",
+            "idealAnswer": "REST principles include statelessness, cacheability, uniform interface, and resource-based URIs. HTTP verbs represent actions, status codes represent results."
+          }
+        }
+      ]
+    },
+    {
+      "id": "int-hist-2",
+      "sessionName": "Algorithmic & Problem Solving Mock",
+      "targetRole": "Software Engineer",
+      "experience": "Fresher",
+      "interviewType": "Coding Interview",
+      "difficulty": "Easy",
+      "totalQuestions": 5,
+      "completedAt": "2026-10-05T13:26:10.726Z",
+      "overallScore": 7.8,
+      "technicalScore": 8,
+      "communicationScore": 7.5,
+      "problemSolvingScore": 8.2,
+      "hrScore": 7.4,
+      "percentage": 78,
+      "strongAreas": [
+        "Optimal O(n) space-time tradeoff identified on Two Sum",
+        "Clear algorithmic complexity estimation"
+      ],
+      "weakAreas": [
+        "Mentioned edge cases only after prompting",
+        "Could write more robust test cases"
+      ],
+      "personalizedSuggestions": [
+        "Always state edge cases (empty array, negative values, large constraints) before writing code.",
+        "Narrate your thought process out loud to boost communication score."
+      ],
+      "questions": []
+    }
+  ]
+}
